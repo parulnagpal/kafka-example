@@ -1,6 +1,6 @@
 package com.flink.service;
 
-public interface FilterService {
+public interface FilterService<I,O> {
 
-    void filter();
+    O filter(I item);
 }
